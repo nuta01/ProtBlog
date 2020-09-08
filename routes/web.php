@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/','ProtBlogController@index');
+Route::post('/find','ProtBlogController@find');
 
